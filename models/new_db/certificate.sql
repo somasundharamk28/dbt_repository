@@ -1,3 +1,3 @@
 
 
-select * from my_db.my_schema.my_table
+select * from {{ source('globalmart', 'my_table') }}
