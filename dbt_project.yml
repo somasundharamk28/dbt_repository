@@ -36,7 +36,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  janarubija:
-    new_db:
-      +materialized: table
+  new_db:
+    +materialized: table
 
