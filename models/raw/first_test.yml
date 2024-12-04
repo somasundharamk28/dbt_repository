@@ -1,0 +1,19 @@
+version: 2
+models:
+  - name: first_file
+    columns:
+      - name: id
+        tests:
+          - unique:
+          - not_null:
+      - name: Name
+        tests:
+          - not_null
+      - name: status
+        tests:
+          - accepted_values:
+              values:
+                - 'Accepted'
+                - 'Rejected'
+                - 'Pending'
+          
