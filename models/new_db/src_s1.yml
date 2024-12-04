@@ -4,4 +4,9 @@ sources:
     database: my_db
     schema: my_schema
     tables:
-      - name: my_table
+      - name: first_testtable
+        columns:
+          - name: ID
+            tests:
+              - unique
+              

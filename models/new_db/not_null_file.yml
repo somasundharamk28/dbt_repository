@@ -1,15 +1,16 @@
 version: 2
+
 models:
   - name: first_testtable
     columns:
-      - name: id
+      - name: ID
         tests:
-          - unique:
-          - not_null:
-      - name: name
+          - unique
+          - not_null
+      - name: NAME
         tests:
-          - not_null:
-      - name: status
+          - not_null
+      - name: STATUS
         tests:
           - accepted_values:
               values:
